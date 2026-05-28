@@ -1,1 +1,5 @@
 [시작] 프로젝트 초기 세팅 완료. 다음: SPEC.md 작성 후 DB 설계 시작.
+[2026-05-28] 인프라 세팅 완료. Plan 단계 종료.
+[2026-05-29] 인증 기능 구현 완료 (register/login/logout/refresh/me). 통합 테스트 19/19 통과.
+주요 발견: Prisma 7은 Driver Adapter 방식 사용 (PrismaPg 필요), JWT에 jti 추가로 로테이션 동일 토큰 버그 수정.
+다음: TIL 기능 구현 (POST/GET/PATCH/DELETE /api/tils + 스트릭 즉시 계산)

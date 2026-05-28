@@ -1,0 +1,29 @@
+{
+  "features": [
+    {
+      "id": "auth-register",
+      "description": "회원가입: 이메일+비밀번호로 계정 생성",
+      "passes": true
+    },
+    {
+      "id": "auth-login",
+      "description": "로그인: Access Token + Refresh Token 발급",
+      "passes": true
+    },
+    {
+      "id": "auth-logout",
+      "description": "로그아웃: Refresh Token 무효화",
+      "passes": true
+    },
+    {
+      "id": "auth-refresh",
+      "description": "Access Token 재발급 (Refresh Token 로테이션)",
+      "passes": true
+    },
+    {
+      "id": "auth-me",
+      "description": "내 정보 조회 (인증 필요)",
+      "passes": true
+    }
+  ]
+}

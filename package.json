@@ -8,15 +8,15 @@
     "test": "tests"
   },
   "scripts": {
-  "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
-  "build": "tsc",
-  "start": "node dist/index.js",
-  "typecheck": "tsc --noEmit",
-  "lint": "eslint src --ext .ts",
-  "test": "jest",
-  "test:watch": "jest --watch",
-  "test:coverage": "jest --coverage"
-},
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ziheon01/til-study-platform.git"
@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/ziheon01/til-study-platform#readme",
   "dependencies": {
+    "@prisma/adapter-pg": "^7.8.0",
     "@prisma/client": "^7.8.0",
     "bcrypt": "^6.0.0",
     "cors": "^2.8.6",
@@ -37,6 +38,7 @@
     "express-async-errors": "^3.1.1",
     "helmet": "^8.2.0",
     "jsonwebtoken": "^9.0.3",
+    "pg": "^8.21.0",
     "pino": "^10.3.1",
     "pino-http": "^11.0.0",
     "prisma": "^7.8.0",
@@ -51,9 +53,11 @@
     "@types/jest": "^30.0.0",
     "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^25.9.1",
+    "@types/pg": "^8.20.0",
     "@types/supertest": "^7.2.0",
     "@typescript-eslint/eslint-plugin": "^8.60.0",
     "@typescript-eslint/parser": "^8.60.0",
+    "dotenv": "^17.4.2",
     "eslint": "^10.4.0",
     "eslint-config-prettier": "^10.1.8",
     "jest": "^30.4.2",
