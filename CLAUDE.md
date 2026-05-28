@@ -149,3 +149,6 @@ Prisma 스키마는 [prisma/schema.prisma](prisma/schema.prisma)에 있다. 생�
 ## 주의할 함정
 
 이 프로젝트에서 실제로 겪은, 직관적이지 않은 동작만 누적해서 적는다. 처음에는 비워둔다.
+
+- Prisma 7은 `new PrismaClient()` 직접 사용 불가. `PrismaPg` Driver Adapter를 통한 싱글톤으로 초기화해야 한다 (`src/utils/prisma.ts` 참고)
+- JWT 발급 시 `jti`(JWT ID) 필드를 반드시 포함해야 한다. 없으면 같은 초에 발급된 토큰이 동일해져 Refresh Token 로테이션 버그 발생
