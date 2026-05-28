@@ -1,0 +1,66 @@
+{
+  "name": "til-study-platform",
+  "version": "1.0.0",
+  "description": "Developer TIL &amp; Study certification platform",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+  "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+  "build": "tsc",
+  "start": "node dist/index.js",
+  "typecheck": "tsc --noEmit",
+  "lint": "eslint src --ext .ts",
+  "test": "jest",
+  "test:watch": "jest --watch",
+  "test:coverage": "jest --coverage"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziheon01/til-study-platform.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ziheon01/til-study-platform/issues"
+  },
+  "homepage": "https://github.com/ziheon01/til-study-platform#readme",
+  "dependencies": {
+    "@prisma/client": "^7.8.0",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "express": "^4.22.2",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^8.2.0",
+    "jsonwebtoken": "^9.0.3",
+    "pino": "^10.3.1",
+    "pino-http": "^11.0.0",
+    "prisma": "^7.8.0",
+    "swagger-jsdoc": "^6.3.0",
+    "swagger-ui-express": "^5.0.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jest": "^30.0.0",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^25.9.1",
+    "@types/supertest": "^7.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.60.0",
+    "@typescript-eslint/parser": "^8.60.0",
+    "eslint": "^10.4.0",
+    "eslint-config-prettier": "^10.1.8",
+    "jest": "^30.4.2",
+    "prettier": "^3.8.3",
+    "supertest": "^7.2.2",
+    "ts-jest": "^29.4.11",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^6.0.3"
+  }
+}

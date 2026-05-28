@@ -141,3 +141,11 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+/src/generated/prisma
+.env
+.env.local
+dist/
+node_modules/
+*.log
+CLAUDE.local.md
