@@ -158,3 +158,6 @@ Prisma 스키마는 [prisma/schema.prisma](prisma/schema.prisma)에 있다. 생�
   `z.string({ error: '...' })` 방식으로 사용
 - 요일 기반 "이번 주" 계산 시 `getUTCDay()` 일요일=0 버그 주의.
   `(dayOfWeek + 6) % 7` 공식으로 월=0, 일=6으로 재매핑해서 사용
+- `JWT_SECRET ?? 'dev-secret'` 폴백이 jwt.ts에 존재.
+  프로덕션 배포 전 환경변수 미설정 시 기본값 사용되지 않도록
+  반드시 undefined 검사 추가 또는 인프라 레벨에서 강제할 것
