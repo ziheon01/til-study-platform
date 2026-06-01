@@ -156,3 +156,5 @@ Prisma 스키마는 [prisma/schema.prisma](prisma/schema.prisma)에 있다. 생�
   `jest.config.js`에 `maxWorkers: 1` 설정으로 직렬화 필요
 - Zod v4에서 `z.string({ required_error: '...' })` 제거됨.
   `z.string({ error: '...' })` 방식으로 사용
+- 요일 기반 "이번 주" 계산 시 `getUTCDay()` 일요일=0 버그 주의.
+  `(dayOfWeek + 6) % 7` 공식으로 월=0, 일=6으로 재매핑해서 사용

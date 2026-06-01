@@ -79,6 +79,26 @@
       "id": "task-delete",
       "description": "태스크 삭제: 소유자 검증",
       "passes": true
+    },
+    {
+      "id": "stats-streak",
+      "description": "통계 - 스트릭: currentStreak/longestStreak/lastStudiedAt",
+      "passes": true
+    },
+    {
+      "id": "stats-today-tasks",
+      "description": "통계 - 오늘 태스크 완료율: totalTasks/completedTasks/taskCompletionRate",
+      "passes": true
+    },
+    {
+      "id": "stats-weekly-til",
+      "description": "통계 - 이번 주 TIL 작성 일수: 이번 주 월요일 ~ 오늘 UTC 기준",
+      "passes": true
+    },
+    {
+      "id": "stats-weekly-tasks",
+      "description": "통계 - 이번 주 태스크 완료율: 이번 주 월요일 ~ 오늘 UTC 기준",
+      "passes": true
     }
   ]
 }
