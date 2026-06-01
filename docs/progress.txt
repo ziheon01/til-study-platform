@@ -15,3 +15,10 @@
 [2026-06-01] Review 단계 완료. 5/5 PASS.
 WARNING: jwt.ts JWT_SECRET 폴백 — 프로덕션 전 수정 필요.
 다음: README 작성 → 프론트 연결
+[2026-06-01] React 프론트엔드 구현 완료 (Vite + React + TS + Tailwind CSS v4 + shadcn/ui).
+페이지: 로그인/회원가입, 대시보드, TIL 목록/작성/수정, 오늘의 태스크.
+주요 발견: shadcn init이 @/ alias를 물리적 @ 폴더로 생성 → src/ 로 수동 이동 후 components.json alias 경로 수정.
+주요 발견: 로그인 후 /me 호출 시 Authorization 헤더 없음 버그 → localStorage 저장 후 /me 호출 순서로 수정.
+[2026-06-01] README 업데이트 완료. 아키텍처 폴더 구조 정정 (mappers/ 제거, generated/·lib/ 추가), Out of Scope 섹션·개발 중 발견한 주의사항 표 추가.
+풀스택 MVP 완성. 백엔드 81개 통합 테스트 전체 통과, 프론트 4개 페이지 백엔드 API 연결 완료.
+다음: 없음 (MVP 완성). 향후 확장은 SPEC.md Out of Scope 참고.
