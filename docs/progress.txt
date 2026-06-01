@@ -3,3 +3,6 @@
 [2026-05-29] 인증 기능 구현 완료 (register/login/logout/refresh/me). 통합 테스트 19/19 통과.
 주요 발견: Prisma 7은 Driver Adapter 방식 사용 (PrismaPg 필요), JWT에 jti 추가로 로테이션 동일 토큰 버그 수정.
 다음: TIL 기능 구현 (POST/GET/PATCH/DELETE /api/tils + 스트릭 즉시 계산)
+[2026-06-01] TIL 기능 구현 완료 (create/list/get/update/delete + streak 즉시 계산). 통합 테스트 47/47 통과.
+주요 발견: Jest 기본 병렬 실행이 공유 테스트 DB 충돌 유발 → jest.config.js에 maxWorkers:1 추가.
+다음: Task 기능 구현 (POST/GET/PATCH /api/tasks + 완료 토글)
