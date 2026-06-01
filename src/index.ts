@@ -4,6 +4,7 @@ import helmet from 'helmet';
 import cors from 'cors';
 import authRouter from './controllers/auth.controller';
 import tilRouter from './controllers/til.controller';
+import taskRouter from './controllers/task.controller';
 import { errorHandler } from './middlewares/errors';
 
 const app = express();
@@ -18,6 +19,7 @@ app.get('/health', (_req, res) => {
 
 app.use('/api/auth', authRouter);
 app.use('/api/tils', tilRouter);
+app.use('/api/tasks', taskRouter);
 
 app.use(errorHandler);
 

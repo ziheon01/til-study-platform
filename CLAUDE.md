@@ -154,3 +154,5 @@ Prisma 스키마는 [prisma/schema.prisma](prisma/schema.prisma)에 있다. 생�
 - JWT 발급 시 `jti`(JWT ID) 필드를 반드시 포함해야 한다. 없으면 같은 초에 발급된 토큰이 동일해져 Refresh Token 로테이션 버그 발생
 - Jest 기본 병렬 실행이 공유 테스트 DB에서 FK 충돌 유발.
   `jest.config.js`에 `maxWorkers: 1` 설정으로 직렬화 필요
+- Zod v4에서 `z.string({ required_error: '...' })` 제거됨.
+  `z.string({ error: '...' })` 방식으로 사용

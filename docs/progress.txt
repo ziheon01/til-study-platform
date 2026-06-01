@@ -6,3 +6,6 @@
 [2026-06-01] TIL 기능 구현 완료 (create/list/get/update/delete + streak 즉시 계산). 통합 테스트 47/47 통과.
 주요 발견: Jest 기본 병렬 실행이 공유 테스트 DB 충돌 유발 → jest.config.js에 maxWorkers:1 추가.
 다음: Task 기능 구현 (POST/GET/PATCH /api/tasks + 완료 토글)
+[2026-06-01] Task 기능 구현 완료 (create/list/update/toggle/delete). 통합 테스트 73/73 통과.
+주요 발견: Zod v4에서 z.string()의 required_error 옵션 제거됨 → error 옵션 사용. validate 미들웨어에 validateQuery 추가.
+다음: 학습 통계 기능 구현 (GET /api/stats — streak/태스크완료율/주간TIL/주간태스크완료율)

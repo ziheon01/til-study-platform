@@ -54,6 +54,31 @@
       "id": "streak-calculate",
       "description": "Streak 즉시 계산: TIL 작성 시 currentStreak/longestStreak 업데이트",
       "passes": true
+    },
+    {
+      "id": "task-create",
+      "description": "태스크 등록: 날짜 지정 가능, 생략 시 오늘 UTC",
+      "passes": true
+    },
+    {
+      "id": "task-list",
+      "description": "태스크 목록 조회: 날짜 기준, 본인 태스크만",
+      "passes": true
+    },
+    {
+      "id": "task-update",
+      "description": "태스크 수정: title 부분 수정, 소유자 검증",
+      "passes": true
+    },
+    {
+      "id": "task-toggle",
+      "description": "태스크 완료 토글: isCompleted 반전, 소유자 검증",
+      "passes": true
+    },
+    {
+      "id": "task-delete",
+      "description": "태스크 삭제: 소유자 검증",
+      "passes": true
     }
   ]
 }
